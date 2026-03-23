@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Calculator</title>
+</head>
+
+<body>
+
+<h2>JavaScript Calculator</h2>
+
+<!-- Square -->
+<p>
+    Square this number:
+    <input id="square-input" type="number">
+    <button id="square-button">Calculate</button>
+</p>
+
+<!-- Half -->
+<p>
+    Half this number:
+    <input id="half-input" type="number">
+    <button id="half-button">Calculate</button>
+</p>
+
+<!-- Percent -->
+<p>
+    Fraction:
+    <input id="percent1-input" type="number">
+
+    Whole:
+    <input id="percent2-input" type="number">
+
+    <button id="percent-button">Calculate</button>
+</p>
+
+<!-- Modulus -->
+<p>
+    Integer:
+    <input id="int-input" type="number">
+    <button id="int-button">Calculate</button>
+</p>
+
+<!-- Area -->
+<p>
+    Calculate area of circle with radius:
+    <input id="area-input" type="number">
+    <button id="area-button">Calculate</button>
+</p>
+
+<h3 id="solution"></h3>
+
+<script>
+
+// Square
+function squareNumber(num) {
+    var result = num * num;
+    document.getElementById("solution").innerHTML =
+        "The result of squaring the number " + num + " is " + result;
+}
+
+document.getElementById("square-button").addEventListener("click", function() {
+    var num = document.getElementById("square-input").value;
+    squareNumber(num);
+});
+
+
+// Half
+function halfNumber(num) {
+    var result = num / 2;
+    document.getElementById("solution").innerHTML =
+        "Half of " + num + " is " + result;
+}
+
+document.getElementById("half-button").addEventListener("click", function() {
+    var num = document.getElementById("half-input").value;
+    halfNumber(num);
+});
+
+
+// Percent
+function percentOf(num1, num2) {
+    var result = (num1 / num2) * 100;
+    document.getElementById("solution").innerHTML =
+        num1 + " is " + result + "% of " + num2;
+}
+
+document.getElementById("percent-button").addEventListener("click", function() {
+    var num1 = document.getElementById("percent1-input").value;
+    var num2 = document.getElementById("percent2-input").value;
+    percentOf(num1, num2);
+});
+
+
+// Modulus
+function findModulus(num) {
+    var result = num % 2;
+    document.getElementById("solution").innerHTML =
+        num + " mod 2 is " + result;
+}
+
+document.getElementById("int-button").addEventListener("click", function() {
+    var num = document.getElementById("int-input").value;
+    findModulus(num);
+});
+
+
+// Area of circle
+function areaOfCircle(radius) {
+    var result = Math.PI * radius * radius;
+    document.getElementById("solution").innerHTML =
+        "The area for a circle with radius " + radius + " is " + result;
+}
+
+document.getElementById("area-button").addEventListener("click", function() {
+    var radius = document.getElementById("area-input").value;
+    areaOfCircle(radius);
+});
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Calculator</title>
+</head>
+
+<body>
+
+<h2>JavaScript Calculator</h2>
+
+<!-- Square -->
+<p>
+    Square this number:
+    <input id="square-input" type="number">
+    <button id="square-button">Calculate</button>
+</p>
+
+<!-- Half -->
+<p>
+    Half this number:
+    <input id="half-input" type="number">
+    <button id="half-button">Calculate</button>
+</p>
+
+<!-- Percent -->
+<p>
+    Fraction:
+    <input id="percent1-input" type="number">
+
+    Whole:
+    <input id="percent2-input" type="number">
+
+    <button id="percent-button">Calculate</button>
+</p>
+
+<!-- Modulus -->
+<p>
+    Integer:
+    <input id="int-input" type="number">
+    <button id="int-button">Calculate</button>
+</p>
+
+<!-- Area -->
+<p>
+    Calculate area of circle with radius:
+    <input id="area-input" type="number">
+    <button id="area-button">Calculate</button>
+</p>
+
+<h3 id="solution"></h3>
+
+<script>
+
+// Square
+function squareNumber(num) {
+    var result = num * num;
+    document.getElementById("solution").innerHTML =
+        "The result of squaring the number " + num + " is " + result;
+}
+
+document.getElementById("square-button").addEventListener("click", function() {
+    var num = document.getElementById("square-input").value;
+    squareNumber(num);
+});
+
+
+// Half
+function halfNumber(num) {
+    var result = num / 2;
+    document.getElementById("solution").innerHTML =
+        "Half of " + num + " is " + result;
+}
+
+document.getElementById("half-button").addEventListener("click", function() {
+    var num = document.getElementById("half-input").value;
+    halfNumber(num);
+});
+
+
+// Percent
+function percentOf(num1, num2) {
+    var result = (num1 / num2) * 100;
+    document.getElementById("solution").innerHTML =
+        num1 + " is " + result + "% of " + num2;
+}
+
+document.getElementById("percent-button").addEventListener("click", function() {
+    var num1 = document.getElementById("percent1-input").value;
+    var num2 = document.getElementById("percent2-input").value;
+    percentOf(num1, num2);
+});
+
+
+// Modulus
+function findModulus(num) {
+    var result = num % 2;
+    document.getElementById("solution").innerHTML =
+        num + " mod 2 is " + result;
+}
+
+document.getElementById("int-button").addEventListener("click", function() {
+    var num = document.getElementById("int-input").value;
+    findModulus(num);
+});
+
+
+// Area of circle
+function areaOfCircle(radius) {
+    var result = Math.PI * radius * radius;
+    document.getElementById("solution").innerHTML =
+        "The area for a circle with radius " + radius + " is " + result;
+}
+
+document.getElementById("area-button").addEventListener("click", function() {
+    var radius = document.getElementById("area-input").value;
+    areaOfCircle(radius);
+});
+
+</script>
+
+</body>
+</html>
